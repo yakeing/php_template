@@ -1,20 +1,23 @@
 <?php
 /**
- * Template compilation cache 模板编译缓存
- *
- * @version 2.0
- * @Author weibo.com/yakeing
- */
-class template {
-    public $DiyKeyword   = array();//自定义转译表
-    public $CacheDir       = "saestor://cache/";//缓存编译文件目录 (新浪云 saestor://  分布式文件存储服务)
-    public $CacheSuffix  = ".tpl";//缓存编译文件后缀
-    public $caches           = FALSE;//缓存编译文件开关 FALSE TRUE
+  * Template Compilation Cache 模板编译缓存
+  *
+  * @author yakeing
+  * @version 2.1
+**/
 
-    private $vars                = array();//注册变量
-    private $TplFileAll       = array();//注册文件路径
-    private $ErrFileAll       = array();//注册错误文件
-	
+class template {
+    public $DiyKeyword  = array();
+    public $CacheDir    = "saestor://cache/";
+    public $CacheSuffix = ".tpl";
+    public $caches  = false;
+
+    private $ErrHtml        = '';
+    private $ReadOrWriteErr = false;
+    private $vars       = array();
+    private $TplFileAll     = array();
+    private $ErrFileAll     = array();
+
     //Initialization
     function __construct($TplDir) {
         $this->TplDir = $TplDir;
@@ -40,7 +43,7 @@ class template {
         return $this;
     }
 
-    //Translation table
+    // Translation table
     private function translation() {
         $keyword = array(
             '{if %%}' => 'if (\1):',
@@ -84,8 +87,12 @@ class template {
             foreach ($this->TplFileAll as $file) {
                    $conout .= $this->cache($file);
             }
-            extract($this->vars);
-            $string =  eval('?>' . $conout);
+            if ($this->ReadOrWriteErr) {
+                $string = $this->ErrHtml;
+            }else{
+                extract($this->vars);
+                $string =  eval('?>' . $conout);
+            }
         }else{
             $string = "Lack of the following files".implode("\n<br /> File missing: ".$file);
         }
@@ -96,20 +103,26 @@ class template {
     private function cache($file){
         if($this->caches){
             $renew = true;
-            //  if(is_file($file[1]) OR @filemtime($file[1]) > @filemtime($file[0]))
-            if(is_file($file[1])){
+            $conthtml = '';
+            if(is_file($file[0]) and is_file($file[1])){
                $renew = (filemtime($file[0]) > filemtime($file[1])) ? true : false;
             }
             if($renew){
                 $conthtml = $this->compile($file[0]);
-                file_put_contents($file[1], $conthtml); //It can determine whether to increase success
+                 if(!file_put_contents($file[1], $conthtml)){
+                    $this->ErrHtml = 'Error in adding file to server.';
+                    $this->ReadOrWriteErr = true;
+                 }
             }else{
-                $conthtml = file_get_contents($file[1]);
+                if(is_file($file[1])){
+                    $conthtml = file_get_contents($file[1]);
+                }else{
+                    $this->ErrHtml = 'Error in adding file to server.';
+                    $this->ReadOrWriteErr = true;
+                }
             }
         }else{
             $conthtml = $this->compile($file[0]);
         }
         return $conthtml;
     }
-}
-?>
