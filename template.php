@@ -36,9 +36,9 @@ class template {
         $TplFile = $this->TplDir.$file;
         $CacheFile = $this->CacheDir.$file.$this->CacheSuffix;
          if (is_file($TplFile)) {
-             array_push($this->TplFileAll, array($TplFile, $CacheFile));
+             $this->TplFileAll[] = array($TplFile, $CacheFile);
          }else{
-             array_push($this->ErrFileAll, $TplFile);
+             $this->ErrFileAll[] = $TplFile;
          }
         return $this;
     }
@@ -74,8 +74,8 @@ class template {
         $patterns = $replace = array();
         $keyword = $this->translation();
         foreach ($keyword as $key => $val) {
-            array_push($patterns, '#' . str_replace('%%', '(.+)', preg_quote($key, '#')) . '#U');
-            array_push($replace, '<?php ' . $val.' ?>');
+            $patterns[] = '#' . str_replace('%%', '(.+)', preg_quote($key, '#')) . '#U';
+            $replace[] = '<?php ' . $val.' ?>';
         }
         return preg_replace($patterns, $replace, file_get_contents($buffer));
     }
