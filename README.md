@@ -4,11 +4,11 @@ PHP TEMPLATE ANALYSIS
 
 Author [yakeing](http://weibo.com/yakeing)
 
-[![image](https://oauth.sinaapp.com/svg/4D4D4D/License/F66000/MPL2.0/image.svg)](https://github.com/yakeing/template/blob/master/LICENSE)
+[![image](https://oauth.applinzi.com/SvgLabel/4D4D4D/License/F66000/MPL2.0/image.svg)](https://github.com/yakeing/template/blob/master/LICENSE)
 
-[![image](https://oauth.sinaapp.com/svg/4D4D4D/Language/007EC6/PHP/image.svg)](https://github.com/yakeing/template/blob/master/template.php)
+[![image](https://oauth.applinzi.com/SvgLabel/4D4D4D/Language/007EC6/PHP/image.svg)](https://github.com/yakeing/template/blob/master/template.php)
 
-[![image](https://oauth.sinaapp.com/svg/4D4D4D/Version/97CA00/2.1/image.svg)](https://github.com/yakeing/template)
+[![image](https://oauth.applinzi.com/SvgLabel/4D4D4D/Version/97CA00/2.1/image.svg)](https://github.com/yakeing/template)
 
 
 
