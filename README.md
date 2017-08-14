@@ -2,17 +2,15 @@
 
 PHP TEMPLATE ANALYSIS
 
-Author [yakeing](http://weibo.com/yakeing)
+#### Github
 
-[![image](https://oauth.applinzi.com/SvgLabel/4D4D4D/License/F66000/MPL2.0/image.svg)](https://github.com/yakeing/template/blob/master/LICENSE)
+[![Downloads](https://img.shields.io/github/downloads/yakeing/php_template/total.svg)](https://github.com/yakeing/php_template)
+[![Size](https://img.shields.io/github/size/yakeing/php_template/template.php.svg)](https://github.com/yakeing/php_template)
+[![tag](https://img.shields.io/github/tag/yakeing/php_template.svg)](https://github.com/yakeing/php_template)
+[![Language](https://oauth.applinzi.com/SvgLabel/4D4D4D/Language/F66000/PHP/image.svg)](https://github.com/yakeing/php_template)
+[![License](https://oauth.applinzi.com/SvgLabel/4D4D4D/License/007EC6/MPL-2.0/image.svg)](https://github.com/yakeing/php_template)
 
-[![image](https://oauth.applinzi.com/SvgLabel/4D4D4D/Language/007EC6/PHP/image.svg)](https://github.com/yakeing/template/blob/master/template.php)
-
-[![image](https://oauth.applinzi.com/SvgLabel/4D4D4D/Version/97CA00/2.1/image.svg)](https://github.com/yakeing/template)
-
-
-
-
+BY: [yakeing](http://weibo.com/yakeing)
 
 ### 调试模板
 
@@ -85,11 +83,17 @@ Donate
 ---
 Your donation makes CODE better.
 
- WeChat (微信)
- 
+ Bitcoin (比特币赞助)
+
+ 1Ff2hTfr4EioWv2ZDLKTedUiF9wBBVYSbU
+
+ ![Bitcoin](https://oauth.applinzi.com/QR/230/bitcoin%3a1Ff2hTfr4EioWv2ZDLKTedUiF9wBBVYSbU/Bitcoin.png)
+
+ WeChat (微信赞助)
+
  ![WeChat](https://oauth.applinzi.com/QR/230/wxp%3a%7C%7Cf2f0SOGAUjQ1ALzigoyN7nW8tK68D2oeU3YO/WeChat.png)
 
- Alipay (支付宝)
+ Alipay (支付宝赞助)
 
  ![Alipay](https://oauth.applinzi.com/QR/230/HTTPS%3a%7C%7CQR.ALIPAY.COM%7CTSX082709YGHVXYUQCWKD6/Alipay.png)
  
