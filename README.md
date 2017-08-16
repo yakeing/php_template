@@ -2,7 +2,7 @@
 
 PHP TEMPLATE ANALYSIS
 
-#### Github
+### Github
 
 [![Downloads](https://img.shields.io/github/downloads/yakeing/php_template/total.svg)](https://github.com/yakeing/php_template)
 [![Size](https://img.shields.io/github/size/yakeing/php_template/template.php.svg)](https://github.com/yakeing/php_template)
