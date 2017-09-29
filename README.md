@@ -7,8 +7,8 @@ PHP TEMPLATE ANALYSIS
 [![Downloads](https://img.shields.io/github/downloads/yakeing/php_template/total.svg)](https://github.com/yakeing/php_template)
 [![Size](https://img.shields.io/github/size/yakeing/php_template/template.php.svg)](https://github.com/yakeing/php_template)
 [![tag](https://img.shields.io/github/tag/yakeing/php_template.svg)](https://github.com/yakeing/php_template)
-[![Language](https://oauth.applinzi.com/SvgLabel/4D4D4D/Language/F66000/PHP/image.svg)](https://github.com/yakeing/php_template)
-[![License](https://oauth.applinzi.com/SvgLabel/4D4D4D/License/007EC6/MPL-2.0/image.svg)](https://github.com/yakeing/php_template)
+[![Language](https://oauth.applinzi.com/Badge/4D4D4D/Language/F66000/PHP/image.svg)](https://github.com/yakeing/php_template)
+[![License](https://oauth.applinzi.com/Badge/4D4D4D/License/007EC6/MPL-2.0/image.svg)](https://github.com/yakeing/php_template)
 
 BY: [yakeing](http://weibo.com/yakeing)
 
