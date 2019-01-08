@@ -1,127 +1,83 @@
-# SaeKV
-imitate sina cloud SaeKV class
+# template
 
+PHP TEMPLATE ANALYSIS
 
 ### Github
 
-[![Downloads](https://img.shields.io/github/downloads/yakeing/SaeKV/total.svg)](https://github.com/yakeing/SaeKV)
-[![Size](https://img.shields.io/github/size/yakeing/SaeKV/SaeKV.php.svg)](https://github.com/yakeing/SaeKV)
-[![tag](https://img.shields.io/github/tag/yakeing/SaeKV.svg)](https://github.com/yakeing/SaeKV)
-[![Language](https://api.apptb.com/Badge/4D4D4D/Language/F66000/PHP/image.svg)](https://github.com/yakeing/SaeKV)
-[![License](https://api.apptb.com/Badge/4D4D4D/License/007EC6/MPL-2.0/image.svg)](https://github.com/yakeing/SaeKV)
+[![Downloads](https://img.shields.io/github/downloads/yakeing/php_template/total.svg)](https://github.com/yakeing/php_template)
+[![Size](https://img.shields.io/github/size/yakeing/php_template/template.php.svg)](https://github.com/yakeing/php_template)
+[![tag](https://img.shields.io/github/tag/yakeing/php_template.svg)](https://github.com/yakeing/php_template)
+[![Language](https://img.shields.io/github/license/yakeing/php_template.svg)](https://github.com/yakeing/php_template)
+[![Language](https://img.shields.io/github/languages/top/yakeing/php_template.svg)](https://github.com/yakeing/php_template)
 
 BY: [yakeing](http://weibo.com/yakeing)
 
-### KV init
+### 调试模板
+
+- [x] example
 
 ```php
-    $kv = new SaeKV(3000);
-    $ret = $kv->init("accesskey");
+    //Template path 模板路径
+    $tpl = new template("/home/www/mould/");
+
+    $tpl->assign("title","I was the title");
+    $tpl->assign("arr",array('aaa','bbb','ccc'));
+
+    //The transfer of files at the same time output 执行模板文件
+    $tpl->GetFile("header.html")->GetFile("index.html")->GetFile("footer.html")->render();
 ```
 
-### KV set data
+
+
+### Format 判断
+
+- [x] example
+
+```
+    {if $array}...{elseif $array[0]!=null}...{else}...{/if}
+```
+
+### foreach 循环
+
+- [x] example
 
 ```php
-      $kv->set('kev','value');
+    {foreach $array as $key => $value}...{$key} => {$value}...{/foreach}
 ```
 
-### KV add data
+### while 循环
 
-```php
-    $kv->add('kev','value');
-```
-
-### KV get data
-
-```php
-    $kv->get('kev');
-```
-
-### KV delete data
-
-```php
-    $kv->delete('kev');
-```
-
-### replace data
-
-```php
-    $ret = $kv->replace('abc', 'cccccc');
-```
-
-### Get multiple groups of data
-
-```php
-    $keys = array();
-    array_push($keys, 'abc1');
-    array_push($keys, 'abc2');
-    array_push($keys, 'abc3');
-    $ret = $kv->mget($keys);
-```
-
-### Get prefix range data
-
-```php
-    $ret = $kv->pkrget('abc', 3);
-```
-
-### Get all data
-
-```php
-    $ret = $kv->pkrget('');
-```
-
-Invalid
-
-  ~~$ret = $kv->pkrget('', 100);~~
-  
-  ~~while(true){~~
-  
-  ~~var_dump($ret);~~
-  
-  ~~end($ret);~~
-  
-  ~~$start_key = key($ret);~~
-  
-  ~~$i = count($ret);~~
-  
-  ~~if ($i < 100) break;~~
-  
-~~$ret = $kv->pkrget('', 100, $start_key);~~
-
-~~}~~
-
-
-### get options list
-
-```php
-    $opts = $kv->get_options();
-```
-
-### set options
-
-```php
-    $opts = array('encodekey' => 0);
-    $ret = $kv->set_options($opts);
-```
-
-### Local file
+- [x] example
 
 ```
-    kvdb.txt (json)
-    {
-        kev1:value1,
-        kev2:[
-            kev2:value2,
-            kev3:value3
-        ],.....
-    }
+    {$i = 1}...{while $i < $j}...{$i}...{$i++}...{/while}
 ```
 
-Original document
----
+### for 循环
 
-[SaeKV-code](http://apidoc.sinaapp.com/class-SaeKV.html)
+- [x] example
+
+```
+    {for ($i=0;$i<count($array);$i++)}...{$array[$i]}...{/for}
+```
+
+### switch 分支选择
+
+- [x] example
+
+```
+    {switch $str} ..{case 1}...{break}...{default}...{/switch}
+```
+
+### 赋值 OR 计算
+
+- [x] example
+
+```
+    {$i = 1}//There must be a space about equal 等号左右必须有一个空格
+    {$i++}
+    {$i--}
+```
 
 
 Donate
@@ -132,13 +88,12 @@ Your donation makes CODE better.
 
  1Ff2hTfr4EioWv2ZDLKTedUiF9wBBVYSbU
 
- ![Bitcoin](https://api.apptb.com/QR/230/bitcoin%3a1Ff2hTfr4EioWv2ZDLKTedUiF9wBBVYSbU/Bitcoin.png)
+ ![Bitcoin](https://app208.applinzi.com/QR/230/bitcoin%3a1Ff2hTfr4EioWv2ZDLKTedUiF9wBBVYSbU/Bitcoin.png)
 
  WeChat (微信赞助)
 
- ![WeChat](https://api.apptb.com/QR/230/https%3a%7C%7Cpayapp.weixin.qq.com%7Cqr%7CAQFjACEumLq80lLV2aIgLwjh*t%3dCwAK%25wechat_pay/WeChat.png)
+ ![WeChat](https://app208.applinzi.com/QR/230/https%3a%7C%7Cpayapp.weixin.qq.com%7Cqr%7CAQFjACEumLq80lLV2aIgLwjh*t%3dCwAK%25wechat_pay/WeChat.png)
 
  Alipay (支付宝赞助)
 
- ![Alipay](https://api.apptb.com/QR/230/HTTPS%3a%7C%7CQR.ALIPAY.COM%7CTSX082709YGHVXYUQCWKD6/Alipay.png)
-
+ ![Alipay](https://app208.applinzi.com/QR/230/HTTPS%3a%7C%7CQR.ALIPAY.COM%7CTSX082709YGHVXYUQCWKD6/Alipay.png)
