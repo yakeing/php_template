@@ -5,12 +5,10 @@ PHP TEMPLATE ANALYSIS
 ### Github
 
 [![Downloads](https://img.shields.io/github/downloads/yakeing/php_template/total.svg)](https://github.com/yakeing/php_template)
-[![Size](https://img.shields.io/github/size/yakeing/php_template/template.php.svg)](https://github.com/yakeing/php_template)
-[![tag](https://img.shields.io/github/tag/yakeing/php_template.svg)](https://github.com/yakeing/php_template)
-[![Language](https://img.shields.io/github/license/yakeing/php_template.svg)](https://github.com/yakeing/php_template)
-[![Language](https://img.shields.io/github/languages/top/yakeing/php_template.svg)](https://github.com/yakeing/php_template)
-
-BY: [yakeing](http://weibo.com/yakeing)
+[![Size](https://img.shields.io/github/size/yakeing/php_template/template.php.svg)](https://github.com/yakeing/php_template/blob/master/template.php)
+[![tag](https://img.shields.io/github/tag/yakeing/php_template.svg)](https://github.com/yakeing/php_template/releases)
+[![Language](https://img.shields.io/github/license/yakeing/php_template.svg)](https://github.com/yakeing/php_template/blob/master/LICENSE)
+[![Php](https://img.shields.io/github/languages/top/yakeing/php_template.svg)](https://github.com/yakeing/php_template)
 
 ### 调试模板
 
@@ -98,3 +96,9 @@ Your donation makes CODE better.
 
  ![Alipay](https://raw.githubusercontent.com/yakeing/Content/master/Donate/Alipay.png)
 
+Author
+---
+
+weibo: [yakeing](https://weibo.com/yakeing)
+
+twitter: [yakeing](https://twitter.com/yakeing)
