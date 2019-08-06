@@ -1,14 +1,15 @@
 <?php
 /**
-  * Template Compilation Cache 模板编译缓存
+  * Template Compilation Cache
   *
   * @author yakeing
-  * @version 2.1
+  * @version 2.2
 **/
 
+namespace php_template;
 class template {
     public $DiyKeyword  = array();
-    public $CacheDir    = "saestor://cache/";
+    public $CacheDir    = "/tmp/cache/";
     public $CacheSuffix = ".tpl";
     public $caches  = false;
 
