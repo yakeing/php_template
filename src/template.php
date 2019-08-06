@@ -3,7 +3,7 @@
   * Template Compilation Cache
   *
   * @author yakeing
-  * @version 2.2
+  * @version 2.3
 **/
 
 namespace php_template;
@@ -62,7 +62,7 @@ class template {
             '{break}' => 'break;',
             '{default}' => 'default:',
             '{/switch}' => 'endswitch;',
-            '{$%% = %%}' => '$\1 = \2;',
+            '{$%%=%%}' => '$\1=\2;',
             '{$%%++}' => '$\1++;',
             '{$%%}' => 'echo $\1;'
         );
