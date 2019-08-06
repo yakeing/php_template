@@ -14,7 +14,7 @@ PHP TEMPLATE ANALYSIS
 ### Github
 
 [![Downloads](https://img.shields.io/github/downloads/yakeing/php_template/total.svg)](https://github.com/yakeing/php_template)
-[![Size](https://img.shields.io/github/size/yakeing/php_template/template.php.svg)](https://github.com/yakeing/php_template/blob/master/template.php)
+[![Size](https://img.shields.io/github/size/yakeing/php_template/src/template.php.svg)](https://github.com/yakeing/php_template/blob/master/template.php)
 [![tag](https://img.shields.io/github/tag/yakeing/php_template.svg)](https://github.com/yakeing/php_template/releases)
 [![Language](https://img.shields.io/github/license/yakeing/php_template.svg)](https://github.com/yakeing/php_template/blob/master/LICENSE)
 [![Php](https://img.shields.io/github/languages/top/yakeing/php_template.svg)](https://github.com/yakeing/php_template)
