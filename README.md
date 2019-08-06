@@ -1,6 +1,15 @@
-# template
+# Template
 
 PHP TEMPLATE ANALYSIS
+
+### Travis CI
+
+[![Travis-ci](https://api.travis-ci.org/yakeing/php_template.svg?branch=master)](https://travis-ci.org/yakeing/php_template)
+
+### Packagist
+
+[![Version](http://img.shields.io/packagist/v/yakeing/php_template.svg)](https://github.com/yakeing/php_template/releases)
+[![Downloads](http://img.shields.io/packagist/dt/yakeing/php_template.svg)](https://packagist.org/packages/yakeing/php_template)
 
 ### Github
 
@@ -24,8 +33,6 @@ PHP TEMPLATE ANALYSIS
     //The transfer of files at the same time output
     $tpl->GetFile("header.html")->GetFile("index.html")->GetFile("footer.html")->render();
 ```
-
-
 
 ### Format
 
