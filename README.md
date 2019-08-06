@@ -79,7 +79,7 @@ PHP TEMPLATE ANALYSIS
 - [x] example
 
 ```
-    {$i = 1}//There must be a space about equal
+    {$i = 1} OR {$t=2}
     {$i++}
     {$i--}
 ```
