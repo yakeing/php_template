@@ -22,6 +22,9 @@ class template {
     //Initialization
     function __construct($TplDir) {
         $this->TplDir = $TplDir;
+        if (function_exists("eval")){
+            throw new Exception('eval not defined');
+        }
         if (version_compare(PHP_VERSION, '5') == -1) { //Judgment PHP version
             register_shutdown_function(array( & $this, '__destruct'));
         }
@@ -92,7 +95,7 @@ class template {
                 $string = $this->ErrHtml;
             }else{
                 extract($this->vars);
-                $string =  eval('?>' . $conout);
+                $string =  eval('?>' . $conout.'<?php;');
             }
         }else{
             $string = "Lack of the following files".implode("\n<br /> File missing: ".$file);
