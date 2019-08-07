@@ -1,3 +1,3 @@
-        {$footer}
+        Copyright {$number} {$footer}
     </body>
 </html>
