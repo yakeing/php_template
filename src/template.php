@@ -127,3 +127,4 @@ class template {
         }
         return $conthtml;
     }
+}
