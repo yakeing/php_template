@@ -7,6 +7,7 @@ class php_templateTest extends TestCase{
   public function testtemplate(){
     $dir = dirname(__FILE__).'/../mould/';
     $tpl = new template($dir);
+    $tpl->caches = true;
     $tpl->assign("string","I was the title");
     $tpl->assign("array",array('aaa','bbb','ccc'));
     $tpl->assign("number", date("Y"));
