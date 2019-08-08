@@ -12,7 +12,7 @@ class php_templateTest extends TestCase{
     $tpl->assign("array",array('aaa','bbb','ccc'));
     $tpl->assign("number", date("Y"));
     $tpl->assign("footer","***, Inc.");
-    $tpl->GetFile("header.tpl")->GetFile("body.tpl")->GetFile("footer.tpl")->render();
+    $tpl->GetFile("header")->GetFile("body")->GetFile("footer")->render();
 
     //$this->assertEqual(date("Y"), $tpl->vars['number']); private
     $this->assertFileExists($tpl->CacheDir.'header.tpl');
