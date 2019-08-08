@@ -65,7 +65,7 @@ class template {
             '{break}' => 'break;',
             '{default}' => 'default:',
             '{/switch}' => 'endswitch;',
-            '{$%%=%%}' => '$\1=\2;',
+            '{$%% = %%}' => '$\1 = \2;',
             '{$%%++}' => '$\1++;',
             '{$%%}' => 'echo $\1;'
         );
