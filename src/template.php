@@ -113,11 +113,17 @@ class template {
             }
             if($renew){
                 $conthtml = $this->compile($file[0]);
+                 $parts = explode('/', $file[1]);
+                 array_pop($parts);
+                 $dir = implode('/', $parts);
+                 if(!is_dir($dir)) mkdir($dir, 0777, true);
+             
                 var_dump($file[1], $conthtml);
                 var_dump(file_put_contents($file[1], $conthtml));
                 exit;
                 //------------------------------------------------------------------
-                 if(!file_put_contents($file[1], $conthtml)){
+             
+                 if(false === file_put_contents($file[1], $conthtml)){
                     $this->ErrHtml = 'Error in adding file to server.';
                     $this->ReadOrWriteErr = true;
                  }
