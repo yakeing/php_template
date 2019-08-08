@@ -65,9 +65,9 @@ class template {
             '{break}' => 'break;',
             '{default}' => 'default:',
             '{/switch}' => 'endswitch;',
-            '{$%% = %%}' => '$\1 = \2;',
             '{$%%++}' => '$\1++;',
-            '{$%%}' => 'echo $\1;'
+            '{$%%}' => 'echo $\1;',
+            '{$%%=%%}' => '$\1=\2;'
         );
         //Can be customized to the translation table, there is a repeat of $this->DiyKeyword as the standard
         return array_merge($keyword, $this->DiyKeyword);
