@@ -95,7 +95,7 @@ class template {
                 $string = $this->ErrHtml;
             }else{
                 extract($this->vars);
-               // $string =  eval('?>' . $conout.'<?php;');
+               /* $string =  eval('?>' . $conout.'<?php;'); */
                 $string =  eval('?>' . $conout);
             }
         }else{
