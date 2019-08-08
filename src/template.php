@@ -5,7 +5,6 @@
   * @author yakeing
   * @version 2.3
 **/
-
 namespace php_template;
 class template {
     public $DiyKeyword  = array();
@@ -115,6 +114,7 @@ class template {
             if($renew){
                 $conthtml = $this->compile($file[0]);
                 var_dump($file[1], $conthtml);
+             exit;
              
                  if(!file_put_contents($file[1], $conthtml)){
                     $this->ErrHtml = 'Error in adding file to server.';
