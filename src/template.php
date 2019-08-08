@@ -95,7 +95,8 @@ class template {
                 $string = $this->ErrHtml;
             }else{
                 extract($this->vars);
-                $string =  eval('?>' . $conout.'<?php;');
+               // $string =  eval('?>' . $conout.'<?php;');
+                $string =  eval('?>' . $conout);
             }
         }else{
             $string = "Lack of the following files".implode("\n<br /> File missing: ".$file);
