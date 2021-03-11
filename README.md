@@ -12,7 +12,7 @@ PHP TEMPLATE ANALYSIS, It can quickly compile the original template and generate
 
 ### Github badge
 
-[![Downloads](https://badging.now.sh/github/downloads/yakeing/php_template?icon=github)](../../)
+[![Downloads](https://badging.tk/github/downloads/yakeing/php_template?icon=github)](../../)
 [![Size](https://badging.tk/github/size/yakeing/php_template?icon=github)](src)
 [![tag](https://badging.tk/github/tag/yakeing/php_template?icon=github)](../../releases)
 [![license](https://badging.tk/static/label/license/555/MPL-2.0/fe7d37?icon=github)](LICENSE)
