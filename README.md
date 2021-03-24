@@ -4,11 +4,11 @@ PHP TEMPLATE ANALYSIS, It can quickly compile the original template and generate
 
 ### Travis CI badge
 
-[![Travis-ci](https://api.travis-ci.com/yakeing/php_template.svg?branch=master)](https://travis-ci.com/yakeing/php_template)
+[![Travis-ci](https://api.travis-ci.com/yakeing/php_template.svg?branch=main)](https://travis-ci.com/yakeing/php_template)
 
 ### codecov badge
 
-[![codecov](https://codecov.io/gh/yakeing/php_template/branch/master/graph/badge.svg)](https://codecov.io/gh/yakeing/php_template)
+[![codecov](https://codecov.io/gh/yakeing/php_template/branch/main/graph/badge.svg)](https://codecov.io/gh/yakeing/php_template)
 
 ### Github badge
 
